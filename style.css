@@ -1,137 +1,131 @@
-body {
-  background-color: white;
-  color: black;
+ body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Navigation */
-header {
   display: flex;
-  justify-content: flex-end;
-  padding: 15px 20px;
-  border-bottom: 1px solid #ccc;
 }
 
-header a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  margin-left: 15px;
-  padding: 8px 16px;
-  border: 1px solid black;
-  border-radius: 4px;
-}
-
-header a:hover,
-header a.active {
-  background-color: black;
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #5A2D82; /* Purple shade */
   color: white;
-}
-
-/* About Page Layout */
-.container {
-  display: flex;
-  padding: 30px;
-  gap: 40px;
-}
-
-.left {
-  flex: 2;
-}
-
-.left h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-.left p {
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.skills-container {
-  display: flex;
-  gap: 50px;
-}
-
-.skills-container div h3 {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.skills-container ul {
-  list-style: disc;
-  padding-left: 20px;
-  margin: 0;
-}
-
-.right {
-  flex: 1;
+  padding: 20px;
   text-align: center;
 }
 
-.right img {
-  width: 200px;
-  height: 200px;
+.sidebar img {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid black;
+  border: 3px solid white;
+  margin-bottom: 10px;
 }
 
-.right h3 {
+.sidebar h2 {
   margin: 10px 0 5px 0;
-  font-size: 20px;
 }
 
-.right p {
-  margin: 5px 0;
+.sidebar .role {
+  font-size: 14px;
+  opacity: 0.8;
 }
 
-.right a {
-  color: black;
+.sidebar .links {
+  margin-top: 20px;
+}
+
+.sidebar .links a {
+  display: block;
+  padding: 10px;
+  color: white;
   text-decoration: none;
+  text-align: left;
+  border-radius: 5px;
 }
 
-.right a:hover {
-  text-decoration: underline;
+.sidebar .links a:hover,
+.sidebar .links a.active {
+  background-color: white;
+  color: #5A2D82;
 }
 
-/* Portfolio Page */
-.portfolio-container {
+.sidebar .social {
+  margin-top: 30px;
+}
+
+.sidebar .social a {
+  color: white;
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.sidebar .social a:hover {
+  color: #FFD700;
+}
+
+/* Content Area */
+.content {
+  flex: 1;
   padding: 30px;
+  background-color: white;
+  color: black;
 }
 
-.portfolio-container h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 15px;
+.content h1 {
+  margin-top: 0;
 }
 
-.portfolio-container p {
-  line-height: 1.6;
-  margin-bottom: 15px;
+.skills-tools {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.skills-tools h3 {
+  margin-bottom: 10px;
+  color: #5A2D82;
+}
+
+.skills-tools ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.project {
+  margin-top: 20px;
 }
 
 .screenshots {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 15px;
+  margin-top: 15px;
 }
 
 .screenshots img {
   width: 100%;
-  height: auto;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 8px;
 }
 
 /* Footer */
 footer {
-  background-color: #f1f1f1;
-  text-align: center;
-  padding: 15px;
+  margin-top: 30px;
+  padding-top: 10px;
   border-top: 1px solid #ccc;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+.social-footer a {
+  color: #5A2D82;
+  font-size: 18px;
+  margin: 0 5px;
+}
+
+.social-footer a:hover {
+  color: #FFD700;
 }
